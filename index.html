@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body 
+   style="background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80'); 
+     background-size: cover; 
+     background-position: center; 
+     height: 100vh; 
+     display: flex; 
+     flex-direction: column; 
+      font-family: Arial, sans-serif;
+     color: #f7f7f7;">
+     <fieldset style="padding: 5px;">
+  <legend style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+    weatherapi
+  </legend>
+  <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Check weather of your area</p>
+     </fieldset>
+
+<h1 
+    style="text-align: center; font-family: 'Times New Roman', Times, serif; padding: 35px; color: honeydew; ">
+    Weather forecast
+</h1>
+    <div
+     style="display: flex;justify-content: center; 
+     gap: 20px;">
+<input 
+    type="text"
+    id="cityInput"
+    placeholder="Enter city name" 
+    style="padding: 20px; font-family: 'Times New Roman', Times, serif;">
+<button onclick="GetWeather()" 
+  style="padding: 20px; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif; ">
+        GetWeather
+</button>
+    </div>
+    <div id="weatherResult" style=" align-items: center; 
+     justify-content: center;
+        display: flex; flex-direction: column;">
+    </div>
+    <script src="script.js">
+    </script>
+    <div>
+        <p style="align-items: center; 
+     justify-content: center;
+        display: flex; flex-direction: column;">
+            2025@ weatherapi:All rights reserved.
+        </p>
+    </div>
+</body>
+</html>
